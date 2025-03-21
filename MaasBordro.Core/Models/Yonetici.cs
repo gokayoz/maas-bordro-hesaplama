@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace MaasBordro.Core.Models
 {
-    public class Yonetici
+    public class Yonetici : Personel
     {
-
+        public override decimal MaasHesapla()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
