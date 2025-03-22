@@ -8,9 +8,9 @@ namespace MaasBordro.Core.Models
 {
     public abstract class Personel
     {
-        public string AdSoyad { get; set; }
+        public string Ad { get; set; }
         public decimal SaatlikUcret { get; set; }
-        public int CalismaSuresi { get; set; }
+        public int CalismaSaati { get; set; }
         public abstract decimal MaasHesapla();
     }
 }
