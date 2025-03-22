@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,4 +117,737 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;lblBaslik.Name" xml:space="preserve">
+    <value>lblBaslik</value>
+  </data>
+  <data name="&gt;&gt;lblBaslik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBaslik.Parent" xml:space="preserve">
+    <value>pnlBaslik</value>
+  </data>
+  <data name="&gt;&gt;lblBaslik.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlBaslik.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pnlBaslik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlBaslik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 60</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlBaslik.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlBaslik.Name" xml:space="preserve">
+    <value>pnlBaslik</value>
+  </data>
+  <data name="&gt;&gt;pnlBaslik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlBaslik.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlBaslik.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblBaslik.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBaslik.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16.2pt, style=Bold</value>
+  </data>
+  <data name="lblBaslik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 15</value>
+  </data>
+  <data name="lblBaslik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 38</value>
+  </data>
+  <data name="lblBaslik.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblBaslik.Text" xml:space="preserve">
+    <value>Maaş Bordro Programı</value>
+  </data>
+  <data name="lblBaslik.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblBaslik.Name" xml:space="preserve">
+    <value>lblBaslik</value>
+  </data>
+  <data name="&gt;&gt;lblBaslik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBaslik.Parent" xml:space="preserve">
+    <value>pnlBaslik</value>
+  </data>
+  <data name="&gt;&gt;lblBaslik.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnRaporlar.Name" xml:space="preserve">
+    <value>btnRaporlar</value>
+  </data>
+  <data name="&gt;&gt;btnRaporlar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRaporlar.Parent" xml:space="preserve">
+    <value>pnlMenu</value>
+  </data>
+  <data name="&gt;&gt;btnRaporlar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnAnasayfa.Name" xml:space="preserve">
+    <value>btnAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;btnAnasayfa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAnasayfa.Parent" xml:space="preserve">
+    <value>pnlMenu</value>
+  </data>
+  <data name="&gt;&gt;btnAnasayfa.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnMaasHesaplama.Name" xml:space="preserve">
+    <value>btnMaasHesaplama</value>
+  </data>
+  <data name="&gt;&gt;btnMaasHesaplama.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMaasHesaplama.Parent" xml:space="preserve">
+    <value>pnlMenu</value>
+  </data>
+  <data name="&gt;&gt;btnMaasHesaplama.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnPersonelListesi.Name" xml:space="preserve">
+    <value>btnPersonelListesi</value>
+  </data>
+  <data name="&gt;&gt;btnPersonelListesi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPersonelListesi.Parent" xml:space="preserve">
+    <value>pnlMenu</value>
+  </data>
+  <data name="&gt;&gt;btnPersonelListesi.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnlMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 60</value>
+  </data>
+  <data name="pnlMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 50</value>
+  </data>
+  <data name="pnlMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlMenu.Name" xml:space="preserve">
+    <value>pnlMenu</value>
+  </data>
+  <data name="&gt;&gt;pnlMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnRaporlar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnRaporlar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="btnRaporlar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 5</value>
+  </data>
+  <data name="btnRaporlar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="btnRaporlar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnRaporlar.Text" xml:space="preserve">
+    <value>Raporlar</value>
+  </data>
+  <data name="&gt;&gt;btnRaporlar.Name" xml:space="preserve">
+    <value>btnRaporlar</value>
+  </data>
+  <data name="&gt;&gt;btnRaporlar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRaporlar.Parent" xml:space="preserve">
+    <value>pnlMenu</value>
+  </data>
+  <data name="&gt;&gt;btnRaporlar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnAnasayfa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnAnasayfa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
+  </data>
+  <data name="btnAnasayfa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 5</value>
+  </data>
+  <data name="btnAnasayfa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="btnAnasayfa.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnAnasayfa.Text" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="&gt;&gt;btnAnasayfa.Name" xml:space="preserve">
+    <value>btnAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;btnAnasayfa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAnasayfa.Parent" xml:space="preserve">
+    <value>pnlMenu</value>
+  </data>
+  <data name="&gt;&gt;btnAnasayfa.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnMaasHesaplama.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnMaasHesaplama.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
+  </data>
+  <data name="btnMaasHesaplama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 5</value>
+  </data>
+  <data name="btnMaasHesaplama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 40</value>
+  </data>
+  <data name="btnMaasHesaplama.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnMaasHesaplama.Text" xml:space="preserve">
+    <value>Maaş Hesaplama</value>
+  </data>
+  <data name="&gt;&gt;btnMaasHesaplama.Name" xml:space="preserve">
+    <value>btnMaasHesaplama</value>
+  </data>
+  <data name="&gt;&gt;btnMaasHesaplama.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMaasHesaplama.Parent" xml:space="preserve">
+    <value>pnlMenu</value>
+  </data>
+  <data name="&gt;&gt;btnMaasHesaplama.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnPersonelListesi.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnPersonelListesi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
+  </data>
+  <data name="btnPersonelListesi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 5</value>
+  </data>
+  <data name="btnPersonelListesi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="btnPersonelListesi.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnPersonelListesi.Text" xml:space="preserve">
+    <value>Personel Listesi</value>
+  </data>
+  <data name="&gt;&gt;btnPersonelListesi.Name" xml:space="preserve">
+    <value>btnPersonelListesi</value>
+  </data>
+  <data name="&gt;&gt;btnPersonelListesi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPersonelListesi.Parent" xml:space="preserve">
+    <value>pnlMenu</value>
+  </data>
+  <data name="&gt;&gt;btnPersonelListesi.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnlPersonelListesi.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlPersonelListesi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlPersonelListesi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 590</value>
+  </data>
+  <data name="pnlPersonelListesi.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="pnlPersonelListesi.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlPersonelListesi.Name" xml:space="preserve">
+    <value>pnlPersonelListesi</value>
+  </data>
+  <data name="&gt;&gt;pnlPersonelListesi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlPersonelListesi.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;pnlPersonelListesi.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvSonIslemler.Name" xml:space="preserve">
+    <value>dgvSonIslemler</value>
+  </data>
+  <data name="&gt;&gt;dgvSonIslemler.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvSonIslemler.Parent" xml:space="preserve">
+    <value>pnlSonIslemler</value>
+  </data>
+  <data name="&gt;&gt;dgvSonIslemler.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblSonIslemlerBaslik.Name" xml:space="preserve">
+    <value>lblSonIslemlerBaslik</value>
+  </data>
+  <data name="&gt;&gt;lblSonIslemlerBaslik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSonIslemlerBaslik.Parent" xml:space="preserve">
+    <value>pnlSonIslemler</value>
+  </data>
+  <data name="&gt;&gt;lblSonIslemlerBaslik.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlSonIslemler.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 280</value>
+  </data>
+  <data name="pnlSonIslemler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 250</value>
+  </data>
+  <data name="pnlSonIslemler.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pnlSonIslemler.Name" xml:space="preserve">
+    <value>pnlSonIslemler</value>
+  </data>
+  <data name="&gt;&gt;pnlSonIslemler.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlSonIslemler.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;pnlSonIslemler.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pnlKart4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlKart4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 50</value>
+  </data>
+  <data name="pnlKart4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 180</value>
+  </data>
+  <data name="pnlKart4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnlKart4.Name" xml:space="preserve">
+    <value>pnlKart4</value>
+  </data>
+  <data name="&gt;&gt;pnlKart4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlKart4.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;pnlKart4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>pnlKart3</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlKart3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 50</value>
+  </data>
+  <data name="pnlKart3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 180</value>
+  </data>
+  <data name="pnlKart3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlKart3.Name" xml:space="preserve">
+    <value>pnlKart3</value>
+  </data>
+  <data name="&gt;&gt;pnlKart3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlKart3.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;pnlKart3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbl.Name" xml:space="preserve">
+    <value>lbl</value>
+  </data>
+  <data name="&gt;&gt;lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl.Parent" xml:space="preserve">
+    <value>pnlKart2</value>
+  </data>
+  <data name="&gt;&gt;lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlKart2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 50</value>
+  </data>
+  <data name="pnlKart2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 180</value>
+  </data>
+  <data name="pnlKart2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlKart2.Name" xml:space="preserve">
+    <value>pnlKart2</value>
+  </data>
+  <data name="&gt;&gt;pnlKart2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlKart2.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;pnlKart2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Deger.Name" xml:space="preserve">
+    <value>lblKart1Deger</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Deger.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Deger.Parent" xml:space="preserve">
+    <value>pnlKart1</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Deger.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Baslik.Name" xml:space="preserve">
+    <value>lblKart1Baslik</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Baslik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Baslik.Parent" xml:space="preserve">
+    <value>pnlKart1</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Baslik.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlKart1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 50</value>
+  </data>
+  <data name="pnlKart1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 180</value>
+  </data>
+  <data name="pnlKart1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlKart1.Name" xml:space="preserve">
+    <value>pnlKart1</value>
+  </data>
+  <data name="&gt;&gt;pnlKart1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlKart1.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;pnlKart1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pnlAnasayfa.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlAnasayfa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 110</value>
+  </data>
+  <data name="pnlAnasayfa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 590</value>
+  </data>
+  <data name="pnlAnasayfa.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlAnasayfa.Name" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;pnlAnasayfa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlAnasayfa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlAnasayfa.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dgvSonIslemler.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 50</value>
+  </data>
+  <data name="dgvSonIslemler.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dgvSonIslemler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>940, 180</value>
+  </data>
+  <data name="dgvSonIslemler.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;dgvSonIslemler.Name" xml:space="preserve">
+    <value>dgvSonIslemler</value>
+  </data>
+  <data name="&gt;&gt;dgvSonIslemler.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvSonIslemler.Parent" xml:space="preserve">
+    <value>pnlSonIslemler</value>
+  </data>
+  <data name="&gt;&gt;dgvSonIslemler.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblSonIslemlerBaslik.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSonIslemlerBaslik.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 13.8pt, style=Bold</value>
+  </data>
+  <data name="lblSonIslemlerBaslik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 15</value>
+  </data>
+  <data name="lblSonIslemlerBaslik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 31</value>
+  </data>
+  <data name="lblSonIslemlerBaslik.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblSonIslemlerBaslik.Text" xml:space="preserve">
+    <value>Son İşlemler</value>
+  </data>
+  <data name="&gt;&gt;lblSonIslemlerBaslik.Name" xml:space="preserve">
+    <value>lblSonIslemlerBaslik</value>
+  </data>
+  <data name="&gt;&gt;lblSonIslemlerBaslik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSonIslemlerBaslik.Parent" xml:space="preserve">
+    <value>pnlSonIslemler</value>
+  </data>
+  <data name="&gt;&gt;lblSonIslemlerBaslik.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 15</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 28</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Ay Raporu</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pnlKart4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 15</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 28</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Çalışma Saati</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>pnlKart3</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 15</value>
+  </data>
+  <data name="lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 28</value>
+  </data>
+  <data name="lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl.Text" xml:space="preserve">
+    <value>Toplam Ödemeler</value>
+  </data>
+  <data name="&gt;&gt;lbl.Name" xml:space="preserve">
+    <value>lbl</value>
+  </data>
+  <data name="&gt;&gt;lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl.Parent" xml:space="preserve">
+    <value>pnlKart2</value>
+  </data>
+  <data name="&gt;&gt;lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblKart1Deger.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblKart1Deger.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="lblKart1Deger.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 50</value>
+  </data>
+  <data name="lblKart1Deger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 54</value>
+  </data>
+  <data name="lblKart1Deger.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblKart1Deger.Text" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Deger.Name" xml:space="preserve">
+    <value>lblKart1Deger</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Deger.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Deger.Parent" xml:space="preserve">
+    <value>pnlKart1</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Deger.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblKart1Baslik.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblKart1Baslik.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="lblKart1Baslik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 15</value>
+  </data>
+  <data name="lblKart1Baslik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 28</value>
+  </data>
+  <data name="lblKart1Baslik.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblKart1Baslik.Text" xml:space="preserve">
+    <value>Toplam Personel</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Baslik.Name" xml:space="preserve">
+    <value>lblKart1Baslik</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Baslik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Baslik.Parent" xml:space="preserve">
+    <value>pnlKart1</value>
+  </data>
+  <data name="&gt;&gt;lblKart1Baslik.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 700</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Maaş Bordro Programı</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

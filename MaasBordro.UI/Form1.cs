@@ -6,5 +6,6 @@ namespace MaasBordro.UI
         {
             InitializeComponent();
         }
+        
     }
 }
