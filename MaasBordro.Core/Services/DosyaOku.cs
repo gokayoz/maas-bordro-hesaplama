@@ -9,5 +9,6 @@ namespace MaasBordro.Core.Services
     public class DosyaOku
     {
 
+
     }
 }
