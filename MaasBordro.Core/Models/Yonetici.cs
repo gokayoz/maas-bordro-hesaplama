@@ -8,9 +8,20 @@ namespace MaasBordro.Core.Models
 {
     public class Yonetici : Personel
     {
+        public Yonetici(string ad, decimal saatlikUcret, int calismaSaati, double bonus) : base(ad, "Yönetici", saatlikUcret, calismaSaati)
+        {
+            if (saatlikUcret < 500)
+            {
+                saatlikUcret = 500;
+            }
+            SaatlikUcret = saatlikUcret;
+            Bonus = bonus;
+        }
+
+        public double Bonus { get; set; }
         public override decimal MaasHesapla()
         {
-            throw new NotImplementedException();
+            return (SaatlikUcret * CalismaSaati) + (decimal)Bonus;
         }
     }
 }
