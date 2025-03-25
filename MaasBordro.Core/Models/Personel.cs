@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace MaasBordro.Core.Models
 {
     public abstract class Personel
     {
+        protected Personel()
+        {
+            Ad = string.Empty;
+            Unvan = string.Empty;
+        }
         protected Personel(string ad, string unvan, decimal saatlikUcret, int calismaSaati)
         {
             Ad = ad;

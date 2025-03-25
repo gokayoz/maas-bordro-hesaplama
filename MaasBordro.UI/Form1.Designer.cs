@@ -33,10 +33,9 @@
             dgvPersoneller = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
             panel1 = new Panel();
-            label1 = new Label();
-            button1 = new Button();
+            lblPersonelListesi = new Label();
+            btnAra = new Button();
             textBox1 = new TextBox();
             cmbMemurDerecesi = new ComboBox();
             lblYonetici = new Label();
@@ -52,17 +51,33 @@
             txtSaatlikUcret = new TextBox();
             txtAdSoyad = new TextBox();
             lblMemur = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
+            lblCalismaSaati = new Label();
+            lblSaatlikUcret = new Label();
+            lblUnvan = new Label();
+            lblAdSoyad = new Label();
             panel2 = new Panel();
-            label2 = new Label();
+            lblPersonelBilgileri = new Label();
             lblBaslik = new Label();
             pnlBaslik = new Panel();
-            tabPage4 = new TabPage();
             tabPage2 = new TabPage();
+            panel5 = new Panel();
+            btnMailGonder = new Button();
+            btnPdf = new Button();
+            btnExcel = new Button();
+            panel4 = new Panel();
+            lblMaasGoruntuleme = new Label();
+            dgvRapor = new DataGridView();
+            tabPage1 = new TabPage();
             tabControl1 = new TabControl();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column8 = new DataGridViewTextBoxColumn();
+            Column9 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column11 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
+            Column10 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -73,6 +88,10 @@
             panel2.SuspendLayout();
             pnlBaslik.SuspendLayout();
             tabPage2.SuspendLayout();
+            panel5.SuspendLayout();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvRapor).BeginInit();
+            tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
             SuspendLayout();
             // 
@@ -85,7 +104,7 @@
             // 
             splitContainer1.Panel1.Controls.Add(dgvPersoneller);
             splitContainer1.Panel1.Controls.Add(panel1);
-            splitContainer1.Panel1.Controls.Add(button1);
+            splitContainer1.Panel1.Controls.Add(btnAra);
             splitContainer1.Panel1.Controls.Add(textBox1);
             // 
             // splitContainer1.Panel2
@@ -102,10 +121,10 @@
             splitContainer1.Panel2.Controls.Add(txtSaatlikUcret);
             splitContainer1.Panel2.Controls.Add(txtAdSoyad);
             splitContainer1.Panel2.Controls.Add(lblMemur);
-            splitContainer1.Panel2.Controls.Add(label6);
-            splitContainer1.Panel2.Controls.Add(label5);
-            splitContainer1.Panel2.Controls.Add(label4);
-            splitContainer1.Panel2.Controls.Add(label3);
+            splitContainer1.Panel2.Controls.Add(lblCalismaSaati);
+            splitContainer1.Panel2.Controls.Add(lblSaatlikUcret);
+            splitContainer1.Panel2.Controls.Add(lblUnvan);
+            splitContainer1.Panel2.Controls.Add(lblAdSoyad);
             splitContainer1.Panel2.Controls.Add(panel2);
             resources.ApplyResources(splitContainer1.Panel2, "splitContainer1.Panel2");
             splitContainer1.Panel2.ForeColor = Color.White;
@@ -117,9 +136,11 @@
             dgvPersoneller.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             resources.ApplyResources(dgvPersoneller, "dgvPersoneller");
             dgvPersoneller.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvPersoneller.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dgvPersoneller.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2 });
             dgvPersoneller.Name = "dgvPersoneller";
             dgvPersoneller.ReadOnly = true;
+            dgvPersoneller.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvPersoneller.SelectionChanged += dgvPersoneller_SelectionChanged;
             // 
             // Column1
             // 
@@ -133,33 +154,27 @@
             Column2.Name = "Column2";
             Column2.ReadOnly = true;
             // 
-            // Column3
-            // 
-            resources.ApplyResources(Column3, "Column3");
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(45, 45, 45);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lblPersonelListesi);
             resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
             // 
-            // label1
+            // lblPersonelListesi
             // 
-            resources.ApplyResources(label1, "label1");
-            label1.ForeColor = Color.White;
-            label1.Name = "label1";
+            resources.ApplyResources(lblPersonelListesi, "lblPersonelListesi");
+            lblPersonelListesi.ForeColor = Color.White;
+            lblPersonelListesi.Name = "lblPersonelListesi";
             // 
-            // button1
+            // btnAra
             // 
-            button1.BackColor = Color.FromArgb(0, 123, 255);
-            button1.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(button1, "button1");
-            button1.ForeColor = Color.White;
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = false;
+            btnAra.BackColor = Color.FromArgb(0, 123, 255);
+            btnAra.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(btnAra, "btnAra");
+            btnAra.ForeColor = Color.White;
+            btnAra.Name = "btnAra";
+            btnAra.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -192,6 +207,7 @@
             btnGuncelle.ForeColor = Color.White;
             btnGuncelle.Name = "btnGuncelle";
             btnGuncelle.UseVisualStyleBackColor = false;
+            btnGuncelle.Click += btnGuncelle_Click;
             // 
             // btnEkle
             // 
@@ -285,42 +301,42 @@
             lblMemur.ForeColor = Color.White;
             lblMemur.Name = "lblMemur";
             // 
-            // label6
+            // lblCalismaSaati
             // 
-            resources.ApplyResources(label6, "label6");
-            label6.ForeColor = Color.White;
-            label6.Name = "label6";
+            resources.ApplyResources(lblCalismaSaati, "lblCalismaSaati");
+            lblCalismaSaati.ForeColor = Color.White;
+            lblCalismaSaati.Name = "lblCalismaSaati";
             // 
-            // label5
+            // lblSaatlikUcret
             // 
-            resources.ApplyResources(label5, "label5");
-            label5.ForeColor = Color.White;
-            label5.Name = "label5";
+            resources.ApplyResources(lblSaatlikUcret, "lblSaatlikUcret");
+            lblSaatlikUcret.ForeColor = Color.White;
+            lblSaatlikUcret.Name = "lblSaatlikUcret";
             // 
-            // label4
+            // lblUnvan
             // 
-            resources.ApplyResources(label4, "label4");
-            label4.ForeColor = Color.White;
-            label4.Name = "label4";
+            resources.ApplyResources(lblUnvan, "lblUnvan");
+            lblUnvan.ForeColor = Color.White;
+            lblUnvan.Name = "lblUnvan";
             // 
-            // label3
+            // lblAdSoyad
             // 
-            resources.ApplyResources(label3, "label3");
-            label3.ForeColor = Color.White;
-            label3.Name = "label3";
+            resources.ApplyResources(lblAdSoyad, "lblAdSoyad");
+            lblAdSoyad.ForeColor = Color.White;
+            lblAdSoyad.Name = "lblAdSoyad";
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(45, 45, 45);
-            panel2.Controls.Add(label2);
+            panel2.Controls.Add(lblPersonelBilgileri);
             resources.ApplyResources(panel2, "panel2");
             panel2.Name = "panel2";
             // 
-            // label2
+            // lblPersonelBilgileri
             // 
-            resources.ApplyResources(label2, "label2");
-            label2.ForeColor = Color.White;
-            label2.Name = "label2";
+            resources.ApplyResources(lblPersonelBilgileri, "lblPersonelBilgileri");
+            lblPersonelBilgileri.ForeColor = Color.White;
+            lblPersonelBilgileri.Name = "lblPersonelBilgileri";
             // 
             // lblBaslik
             // 
@@ -335,26 +351,143 @@
             resources.ApplyResources(pnlBaslik, "pnlBaslik");
             pnlBaslik.Name = "pnlBaslik";
             // 
-            // tabPage4
-            // 
-            tabPage4.BackColor = Color.FromArgb(34, 34, 34);
-            resources.ApplyResources(tabPage4, "tabPage4");
-            tabPage4.Name = "tabPage4";
-            // 
             // tabPage2
             // 
             tabPage2.BackColor = Color.FromArgb(34, 34, 34);
-            tabPage2.Controls.Add(splitContainer1);
+            tabPage2.Controls.Add(panel5);
+            tabPage2.Controls.Add(panel4);
+            tabPage2.Controls.Add(dgvRapor);
             resources.ApplyResources(tabPage2, "tabPage2");
             tabPage2.Name = "tabPage2";
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(45, 45, 45);
+            panel5.Controls.Add(btnMailGonder);
+            panel5.Controls.Add(btnPdf);
+            panel5.Controls.Add(btnExcel);
+            resources.ApplyResources(panel5, "panel5");
+            panel5.Name = "panel5";
+            // 
+            // btnMailGonder
+            // 
+            btnMailGonder.BackColor = Color.Coral;
+            btnMailGonder.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(btnMailGonder, "btnMailGonder");
+            btnMailGonder.ForeColor = Color.White;
+            btnMailGonder.Name = "btnMailGonder";
+            btnMailGonder.UseVisualStyleBackColor = false;
+            // 
+            // btnPdf
+            // 
+            btnPdf.BackColor = Color.FromArgb(193, 39, 45);
+            btnPdf.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(btnPdf, "btnPdf");
+            btnPdf.ForeColor = Color.White;
+            btnPdf.Name = "btnPdf";
+            btnPdf.UseVisualStyleBackColor = false;
+            // 
+            // btnExcel
+            // 
+            btnExcel.BackColor = Color.FromArgb(29, 174, 93);
+            btnExcel.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(btnExcel, "btnExcel");
+            btnExcel.ForeColor = Color.White;
+            btnExcel.Name = "btnExcel";
+            btnExcel.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(45, 45, 45);
+            panel4.Controls.Add(lblMaasGoruntuleme);
+            resources.ApplyResources(panel4, "panel4");
+            panel4.Name = "panel4";
+            // 
+            // lblMaasGoruntuleme
+            // 
+            resources.ApplyResources(lblMaasGoruntuleme, "lblMaasGoruntuleme");
+            lblMaasGoruntuleme.ForeColor = Color.White;
+            lblMaasGoruntuleme.Name = "lblMaasGoruntuleme";
+            // 
+            // dgvRapor
+            // 
+            dgvRapor.AllowUserToAddRows = false;
+            dgvRapor.AllowUserToDeleteRows = false;
+            dgvRapor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvRapor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvRapor.Columns.AddRange(new DataGridViewColumn[] { Column3, Column4, Column8, Column9, Column5, Column11, Column6, Column7, Column10 });
+            resources.ApplyResources(dgvRapor, "dgvRapor");
+            dgvRapor.Name = "dgvRapor";
+            dgvRapor.ReadOnly = true;
+            // 
+            // tabPage1
+            // 
+            tabPage1.BackColor = Color.FromArgb(34, 34, 34);
+            tabPage1.Controls.Add(splitContainer1);
+            resources.ApplyResources(tabPage1, "tabPage1");
+            tabPage1.Name = "tabPage1";
             // 
             // tabControl1
             // 
             resources.ApplyResources(tabControl1, "tabControl1");
+            tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
+            // 
+            // Column3
+            // 
+            resources.ApplyResources(Column3, "Column3");
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            resources.ApplyResources(Column4, "Column4");
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            resources.ApplyResources(Column8, "Column8");
+            Column8.Name = "Column8";
+            Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            resources.ApplyResources(Column9, "Column9");
+            Column9.Name = "Column9";
+            Column9.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            resources.ApplyResources(Column5, "Column5");
+            Column5.Name = "Column5";
+            Column5.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            resources.ApplyResources(Column11, "Column11");
+            Column11.Name = "Column11";
+            Column11.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            resources.ApplyResources(Column6, "Column6");
+            Column6.Name = "Column6";
+            Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            resources.ApplyResources(Column7, "Column7");
+            Column7.Name = "Column7";
+            Column7.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            resources.ApplyResources(Column10, "Column10");
+            Column10.Name = "Column10";
+            Column10.ReadOnly = true;
             // 
             // Form1
             // 
@@ -381,6 +514,11 @@
             pnlBaslik.ResumeLayout(false);
             pnlBaslik.PerformLayout();
             tabPage2.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvRapor).EndInit();
+            tabPage1.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -389,27 +527,27 @@
 
         private Label lblBaslik;
         private Panel pnlBaslik;
-        private TabPage tabPage4;
         private TabPage tabPage2;
+        private TabPage tabPage1;
         private TabControl tabControl1;
         private SplitContainer splitContainer1;
         private Button btnGuncelle;
         private Button btnSil;
         private Button btnEkle;
-        private Button button1;
+        private Button btnAra;
         private TextBox textBox1;
         private Panel panel1;
-        private Label label1;
+        private Label lblPersonelListesi;
         private Panel panel2;
-        private Label label2;
-        private Label label3;
+        private Label lblPersonelBilgileri;
+        private Label lblAdSoyad;
         private RadioButton rbtnMemur;
         private RadioButton rbtnYonetici;
         private TextBox txtAdSoyad;
         private Label lblMemur;
-        private Label label6;
-        private Label label5;
-        private Label label4;
+        private Label lblCalismaSaati;
+        private Label lblSaatlikUcret;
+        private Label lblUnvan;
         private Button btnTemizle;
         private TextBox txtCalismaSaati;
         private TextBox txtSaatlikUcret;
@@ -418,8 +556,23 @@
         private Label lblYonetici;
         private TextBox txtYoneticiBonusu;
         private ComboBox cmbMemurDerecesi;
+        private DataGridView dgvRapor;
+        private Panel panel4;
+        private Panel panel5;
+        private Label lblMaasGoruntuleme;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
+        private Button btnExcel;
+        private Button btnMailGonder;
+        private Button btnPdf;
         private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column8;
+        private DataGridViewTextBoxColumn Column9;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column11;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column10;
     }
 }
