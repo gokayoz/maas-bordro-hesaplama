@@ -9,38 +9,28 @@ namespace MaasBordro.Core.Models
 {
     public class Memur : Personel
     {
+        public int Derece { get; set; }
         public Memur(string ad, decimal saatlikUcret, int calismaSaati, int derece) : base(ad, "Memur", saatlikUcret, calismaSaati)
         {
-            if (saatlikUcret > 0)
-            {
-                SaatlikUcret = saatlikUcret;
-            }
-            else
-            {
-                SaatlikUcret = 500;
-            }
             Derece = derece;
 
-            SaatlikUcret += Derece * 10;
+            if (saatlikUcret <= 0)
+            {
+                SaatlikUcret = 500m;
+            }
+            SaatlikUcret = saatlikUcret + (Derece * 10);
         }
-        public int Derece { get; set; }
-        public int _maksimumSaat = 180;
         public override decimal MaasHesapla()
         {
-            decimal anaOdeme = 0;
+            decimal anaOdeme = Math.Min(CalismaSaati, 180) * SaatlikUcret;
+
             decimal mesaiUcreti = 0;
-
-            if (CalismaSaati <= _maksimumSaat)
+            if (CalismaSaati > 180)
             {
-                anaOdeme = SaatlikUcret * _maksimumSaat;
-            }
-            else
-            {
-                anaOdeme = SaatlikUcret * _maksimumSaat;
-                int mesaiSaati = CalismaSaati - _maksimumSaat;
-                mesaiUcreti = (SaatlikUcret * (decimal)1.5) * mesaiSaati;
-            }
+                int mesaiSaati = CalismaSaati - 180;
+                mesaiUcreti = (SaatlikUcret * 1.5m) * mesaiSaati;
 
+            }
             return anaOdeme + mesaiUcreti;
         }
     }

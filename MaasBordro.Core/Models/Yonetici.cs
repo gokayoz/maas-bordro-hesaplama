@@ -8,7 +8,7 @@ namespace MaasBordro.Core.Models
 {
     public class Yonetici : Personel
     {
-        public Yonetici(string ad, decimal saatlikUcret, int calismaSaati, double bonus) : base(ad, "Yönetici", saatlikUcret, calismaSaati)
+        public Yonetici(string ad, decimal saatlikUcret, int calismaSaati, double bonus) : base(ad, "Yonetici", saatlikUcret, calismaSaati)
         {
             if (saatlikUcret < 500)
             {
